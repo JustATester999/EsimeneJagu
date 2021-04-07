@@ -159,6 +159,9 @@ background-repeat: no-repeat;
         background-position: center;
         background-repeat: no-repeat;
 }
+    .desktop-wrapper{
+    font-size: 0px;
 
+}
 
 }
