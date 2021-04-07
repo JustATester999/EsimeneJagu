@@ -161,7 +161,11 @@ background-repeat: no-repeat;
 }
     .desktop-wrapper{
     font-size: 0px;
+}
 
+    .two-column-wrapper{
+        display: grid;
+        grid-template-columns: 1fr;
 }
 
 }
