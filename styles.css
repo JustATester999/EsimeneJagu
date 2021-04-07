@@ -1,0 +1,164 @@
+/* MAIN Style*/
+
+body{
+    margin: 0px;
+    font-family: 'Dela Gothic One', 'sans-serif';
+    background-color: #4B5320;
+}
+
+.container{
+    display: grid; 
+    grid-template-columns: 1fr;
+}
+
+
+/* NAV STYLING */
+.nav-wrapper{
+    display: flex; 
+    justify-content: space-between;
+    padding: 38px;
+}
+
+
+.left-side{
+    display: flex;
+    font-weight: bold; 
+    text-transform: uppercase;
+}
+
+.nav-wrapper > .left-side > div {
+    margin-right: 20px;
+    font-size: 1.2em;
+}
+
+.nav-link-wrapper {
+    height: 24px;
+    border-bottom: 3px solid transparent;
+    transition: border-bottom 1.5s;
+
+}
+
+
+.nav-link-wrapper a {
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 1.5;
+}
+
+.nav-link-wrapper:hover {
+    border-bottom: 3px solid black;
+}
+
+.nav-link-wrapper a:hover {
+    color: black;
+}
+
+.active-nav-link{
+border-bottom: 3px solid black;
+
+}
+
+.active-nav-link a{
+color: black !important;
+
+}
+
+
+/* Portfolio Style*/
+
+
+.portfolio-items-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.portfolio-item-wrapper {
+    position: relative;
+}
+
+
+.portfolio-img-background {
+height: 350px;
+width: 100%;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.img-text-wrapper{
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.name-wrapper img{
+    width: 50%;
+    margin-bottom 20px;
+
+}
+
+/* NOTE HERE */
+
+.img-text-wrapper .subtitle{
+    transition: 1s;
+    font-weight: 600;
+    color: transparent;
+    font-size: 24px;   
+}
+
+.img-text-wrapper:hover .subtitle{
+    font-weight: 600;
+    color: lightseagreen;
+    font-size: 24px;
+}
+
+.img-darken{
+    transition: 1s;
+    filter: brightness(10%);
+
+}
+
+/* ABOUT PAGE STUFF */
+
+.two-column-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.profile-img-wrapper img {
+    width: 100%;
+}
+
+.profile-content-wrapper {
+    padding: 30px;
+}
+.profile-content-wrapper h1{
+    color: lightseagreen;
+}
+
+
+
+@media screen and (max-width: 750px){
+    .portfolio-items-wrapper{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    .portfolio-img-background {
+        height: 450px;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+}
+
+
+}
