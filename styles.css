@@ -9,6 +9,8 @@ body{
 .container{
     display: grid; 
     grid-template-columns: 1fr;
+    padding: 0px;
+    margin: 0px;
 }
 
 
@@ -98,6 +100,23 @@ background-repeat: no-repeat;
     padding-left: 100px;
     padding-right: 100px;
 }
+
+/* FOUND THE BUG THAT MADE THE PAGE JUST A LITTLE BIT OF FROM THE RIGHT SIDE, GOTTA TAKE AWAY THE PADDING FROM RIGTH SIDE PICS */
+
+/* So, what I did, is remove padding 100px from the right side pics and added that to the name divs so that the names would 
+stay in their right places.*/
+
+#pic3, #pic6, #pic9{
+    padding-right: 0px;
+}
+
+
+#pic3 > .name-wrapper, #pic6 > .name-wrapper, #pic9 > .name-wrapper{
+    padding-right: 100px;    
+}
+
+/* BUG FIXING END HERE*/
+
 
 .name-wrapper img{
     width: 50%;
