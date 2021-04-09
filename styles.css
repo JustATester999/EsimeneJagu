@@ -7,7 +7,7 @@ body{
 }
 
 .container{
-    display: grid; 
+    display: grid;
     grid-template-columns: 1fr;
     padding: 0px;
     margin: 0px;
@@ -16,7 +16,7 @@ body{
 
 /* NAV STYLING */
 .nav-wrapper{
-    display: flex; 
+    display: flex;
     justify-content: space-between;
     padding: 38px;
 }
@@ -24,7 +24,7 @@ body{
 
 .left-side{
     display: flex;
-    font-weight: bold; 
+    font-weight: bold;
     text-transform: uppercase;
 }
 
@@ -103,7 +103,7 @@ background-repeat: no-repeat;
 
 /* FOUND THE BUG THAT MADE THE PAGE JUST A LITTLE BIT OF FROM THE RIGHT SIDE, GOTTA TAKE AWAY THE PADDING FROM RIGTH SIDE PICS */
 
-/* So, what I did, is remove padding 100px from the right side pics and added that to the name divs so that the names would 
+/* So, what I did, is remove padding 100px from the right side pics and added that to the name divs so that the names would
 stay in their right places.*/
 
 #pic3, #pic6, #pic9{
@@ -112,7 +112,7 @@ stay in their right places.*/
 
 
 #pic3 > .name-wrapper, #pic6 > .name-wrapper, #pic9 > .name-wrapper{
-    padding-right: 100px;    
+    padding-right: 100px;
 }
 
 /* BUG FIXING END HERE*/
@@ -130,7 +130,7 @@ stay in their right places.*/
     transition: 1s;
     font-weight: 600;
     color: transparent;
-    font-size: 24px;   
+    font-size: 24px;
 }
 
 .img-text-wrapper:hover .subtitle{
@@ -170,21 +170,60 @@ stay in their right places.*/
         display: grid;
         grid-template-columns: 1fr;
     }
-    
+
     .portfolio-img-background {
         height: 450px;
         width: 100%;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-}
+      }
     .desktop-wrapper{
     font-size: 0px;
-}
+    }
 
     .two-column-wrapper{
         display: grid;
         grid-template-columns: 1fr;
+      }
+
 }
+/*Videod desktop type beadi peal.*/
+
+.wrapper-videos{
+  display: flex;
+  flex-flow: column ;
+  align-items: center;
+
+}
+.wrapper-videos video{
+  height: 500px;
+  padding-bottom: 5%;
+  width: 600px;
+}
+
+.wrapper-videos video source{
+  height: 30%;
+}
+
+  .wrapper-videos h2{
+    text-align: center;
+    font-size: 48px;
+  }
+
+
+@media only screen and (max-width: 475px){
+  .brand{font-size: 0px;}
+
+  .wrapper-videos{
+    width: 80%;
+    margin: 10%;
+  }
+
+  .wrapper-videos video{
+    width: 80%;
+    height: auto;
+
+  }
 
 }
